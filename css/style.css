@@ -1,0 +1,49 @@
+.block {
+    border: black 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    background-color: white;
+}
+h2 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+}
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    margin-bottom: 10px;
+}
+canvas {
+    margin-top: 10px;
+}
+
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+#preview {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+

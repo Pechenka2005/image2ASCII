@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Пример страницы</title>
+</head>
+<body>
+    <h2>Source Image</h2>
+    <div class="block">
+        <label> Select file: </label>
+        <input type="file" onchange="downloadImage()">
+        <img src="" id="preview" width="100px">
+    </div>
+    <h2>Settings</h2>
+    <div class="block">
+        <div class="left">
+            <div class="row">
+                <label for="input-used-text">Used text:</label>
+                <input type="text" id="input-used-text" value="B" />
+            </div>
+            <div class="row">
+                <label for="input-font-size">Font size:</label>
+                <input type="number" id="input-font-size" min="3" max="20" step="1" value="16" style="width: 65px" /> px
+            </div>
+        </div>
+        <div class="right">
+            <div class="row">
+                <label for="input-background-color">Background:</label>
+                <input type="color" id="input-background-color" />
+            </div>
+            <div class="row">
+                <label for="input-background-transparent">Transparent:</label>
+                <input type="checkbox" id="input-background-transparent" />
+            </div>
+
+        </div>
+    </div>
+
+    <h2>Result</h2>
+    <div class="button">
+        <button class="btn btn-default" onclick="getResult()"> Get result: </button>
+    </div>
+    <div class="blocks">
+        <div class="image" >
+            <img src="" id="source-image" alt="">
+        </div>
+        <div class="image">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
