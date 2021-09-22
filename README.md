@@ -1,6 +1,5 @@
 # image2ASCII
 
-
 ## Usage
 To run the project, run the `git clone https://github.com/Pechenka2005/image2ASCII.git`
 command and open the `index.html` file in the browser
